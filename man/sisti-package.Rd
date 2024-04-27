@@ -8,6 +8,15 @@
 \description{
 What the package does (one paragraph).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://rmagno.eu/sisti/}
+  \item \url{https://github.com/ramiromagno/sisti}
+  \item Report bugs at \url{https://github.com/ramiromagno/sisti/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Ramiro Magno \email{rmagno@pattern.institute} (\href{https://orcid.org/0000-0001-5226-3441}{ORCID})
 

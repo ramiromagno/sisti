@@ -16,3 +16,5 @@ Imports:
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: https://rmagno.eu/sisti/, https://github.com/ramiromagno/sisti
+BugReports: https://github.com/ramiromagno/sisti/issues
