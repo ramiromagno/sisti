@@ -16,7 +16,7 @@ raw_runs_tannic_acid <-
                      range = "B5:BC44",
                      col_names = as.character(1:54))
 
-raw_runs_igG <-
+raw_runs_IgG <-
   readxl::read_excel(path,
                      sheet = "IgG Runs",
                      range = "B5:BC44",
@@ -33,6 +33,7 @@ runs_calib <-
   tidyr::pivot_longer(cols = everything(),
                       names_to = "run",
                       values_to = "fluor") |>
+  dplyr::mutate(run = as.integer(run)) |>
   dplyr::bind_cols(list(
     cycle = rep(1:50, each = 72),
     copies = copies,
@@ -62,13 +63,14 @@ runs_tannic_acid <-
   tidyr::pivot_longer(cols = everything(),
                       names_to = "run",
                       values_to = "fluor") |>
+  dplyr::mutate(run = as.integer(run)) |>
   dplyr::bind_cols(list(
     inhibitor_conc = rep(rep(tannic_acid_conc, each = 6), 40),
     cycle = rep(1:40, each = 54)
   )) |>
   dplyr::arrange(run, cycle) |>
   dplyr::transmute(
-    plate = "tannic_acid",
+    plate = "tannic acid",
     run = run,
     well = NA_character_,
     target = "MT-ND1",
@@ -84,26 +86,27 @@ runs_tannic_acid <-
     fluor = fluor
   )
 
-igG_conc <- purrr::accumulate(1:8, ~ .x / 2, .init = 2)
-runs_igG <-
-  raw_runs_igG |>
+IgG_conc <- purrr::accumulate(1:8, ~ .x / 2, .init = 2)
+runs_IgG <-
+  raw_runs_IgG |>
   tidyr::pivot_longer(cols = everything(),
                       names_to = "run",
                       values_to = "fluor") |>
+  dplyr::mutate(run = as.integer(run)) |>
   dplyr::bind_cols(list(
-    inhibitor_conc = rep(rep(igG_conc, each = 6), 40),
+    inhibitor_conc = rep(rep(IgG_conc, each = 6), 40),
     cycle = rep(1:40, each = 54)
   )) |>
   dplyr::arrange(run, cycle) |>
   dplyr::transmute(
-    plate = "igG",
+    plate = "IgG",
     run = run,
     well = NA_character_,
     target = "MT-ND1",
     dye = "SYBR",
     sample = "pGEM-T",
     sample_type = "std",
-    inhibitor = "igG",
+    inhibitor = "IgG",
     inhibitor_conc = inhibitor_conc,
     replicate = rep(rep(1:6, each = 40), 9),
     copies = NA_integer_,
@@ -118,6 +121,7 @@ runs_quercitin <-
   tidyr::pivot_longer(cols = everything(),
                       names_to = "run",
                       values_to = "fluor") |>
+  dplyr::mutate(run = as.integer(run)) |>
   dplyr::bind_cols(list(
     inhibitor_conc = rep(rep(quercitin_conc, each = 6), 40),
     cycle = rep(1:40, each = 48)
@@ -144,7 +148,7 @@ sisti <-
   dplyr::bind_rows(
     runs_calib,
     runs_tannic_acid,
-    runs_igG,
+    runs_IgG,
     runs_quercitin
   ) |>
   dplyr::transmute(
