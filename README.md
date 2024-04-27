@@ -7,6 +7,7 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/sisti)](https://CRAN.R-project.org/package=sisti)
+[![R-CMD-check](https://github.com/ramiromagno/sisti/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ramiromagno/sisti/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `{sisti}` provides real-time PCR data sets by Sisti et al. (2010) in
