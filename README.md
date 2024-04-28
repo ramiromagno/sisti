@@ -102,3 +102,10 @@ sisti |>
 Please note that the sisti project is released with a [Contributor Code
 of Conduct](https://rmagno.eu/sisti/CODE_OF_CONDUCT.html). By
 contributing to this project, you agree to abide by its terms.
+
+## References
+
+Davide Sisti, Michele Guescini, Marco BL Rocchi, Pasquale Tibollo, Mario
+D’Atri and Vilberto Stocchi. *Shape based kinetic outlier detection in
+real-time PCR*. BMC Bioinformatics 11:186 (2010). doi:
+[10.1186/1471-2105-11-186](https://doi.org/10.1186/1471-2105-11-186).
