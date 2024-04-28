@@ -158,7 +158,7 @@ sisti <-
     dye = as.factor(dye),
     sample = as.factor(sample),
     sample_type = as.factor(sample_type),
-    inhibitor = as.factor(inhibitor),
+    inhibitor = factor(inhibitor, levels = c("none", "tannic acid", "IgG", "quercitin")),
     inhibitor_conc = as.double(inhibitor_conc),
     replicate = as.factor(replicate),
     copies = as.integer(copies),
