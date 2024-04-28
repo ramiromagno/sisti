@@ -15,7 +15,7 @@ Description: This data package contains four datasets of quantitative PCR (qPCR)
   a 104 bp fragment of the mitochondrial gene NADH dehydrogenase 1 (MT-ND1),
   amplified using the ND1/ND2 primer pair. The remaining three datasets contain
   qPCR results in the presence of specific PCR inhibitors: tannic acid,
-  Immunoglobulin G (IgG), and quercetin, respectively, to assess their effects
+  immunoglobulin G (IgG), and quercetin, respectively, to assess their effects
   on the amplification process. These datasets are useful for researchers 
   interested in PCR kinetics. The original raw data file is available as
   Additional File 1:
