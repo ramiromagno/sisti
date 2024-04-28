@@ -80,8 +80,8 @@ runs_tannic_acid <-
     inhibitor = "tannic acid",
     inhibitor_conc = inhibitor_conc,
     replicate = rep(rep(1:6, each = 40), 9),
-    copies = NA_integer_,
-    dilution = NA_integer_,
+    copies = 31400L,
+    dilution = (3.14 * 10 ^7) / copies,
     cycle = cycle,
     fluor = fluor
   )
@@ -109,8 +109,8 @@ runs_IgG <-
     inhibitor = "IgG",
     inhibitor_conc = inhibitor_conc,
     replicate = rep(rep(1:6, each = 40), 9),
-    copies = NA_integer_,
-    dilution = NA_integer_,
+    copies = 3140000L,
+    dilution = (3.14 * 10 ^7) / copies,
     cycle = cycle,
     fluor = fluor
   )
@@ -138,8 +138,8 @@ runs_quercitin <-
     inhibitor = "quercitin",
     inhibitor_conc = inhibitor_conc,
     replicate = rep(rep(1:6, each = 40), 8),
-    copies = NA_integer_,
-    dilution = NA_integer_,
+    copies = 31400L,
+    dilution = (3.14 * 10 ^7) / copies,
     cycle = cycle,
     fluor = fluor
   )
