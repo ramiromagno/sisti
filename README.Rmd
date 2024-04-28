@@ -25,12 +25,13 @@ knitr::opts_chunk$set(
 format as one single table (also named) `sisti`.
 
 The primary dataset comprises a ten-fold dilution series spanning copy numbers
-from 3.14 × 10^7 to 3.14 × 10^2, with twelve replicates per concentration. These
-samples are based on a pGEM-T Promega plasmid containing a 104 bp fragment of
-the mitochondrial gene NADH dehydrogenase 1 (MT-ND1), amplified using the
-ND1/ND2 primer pair. The remaining three datasets contain qPCR results in the
-presence of specific PCR inhibitors: tannic acid, immunoglobulin G (IgG), and
-quercetin, respectively, to assess their effects on the amplification process.
+from $3.14 \times 10^7$ to $3.14 \times 10^2$, with twelve replicates per
+concentration. These samples are based on a pGEM-T Promega plasmid containing a
+104 bp fragment of the mitochondrial gene NADH dehydrogenase 1 (MT-ND1),
+amplified using the ND1/ND2 primer pair. The remaining three datasets contain
+qPCR results in the presence of specific PCR inhibitors: tannic acid,
+immunoglobulin G (IgG), and quercetin, respectively, to assess their effects on
+the amplification process.
 
 Each original data set can be obtained by filtering `sisti` by `plate` (see
 below).
