@@ -22,7 +22,18 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 `{sisti}` provides real-time PCR data sets by Sisti et al. (2010) in tidy
-format.
+format as one single table (also named) `sisti`.
+
+The primary dataset comprises a ten-fold dilution series spanning copy numbers
+from 3.14 × 10^7 to 3.14 × 10^2, with twelve replicates per concentration. These
+samples are based on a pGEM-T Promega plasmid containing a 104 bp fragment of
+the mitochondrial gene NADH dehydrogenase 1 (MT-ND1), amplified using the
+ND1/ND2 primer pair. The remaining three datasets contain qPCR results in the
+presence of specific PCR inhibitors: tannic acid, immunoglobulin G (IgG), and
+quercetin, respectively, to assess their effects on the amplification process.
+
+Each original data set can be obtained by filtering `sisti` by `plate` (see
+below).
 
 ## Installation
 
@@ -32,13 +43,37 @@ install.packages("sisti")
 
 ## Data
 
-### Standard dilution series
+Each sample group is defined by the inhibitor ("none", "tannic acid", "IgG" or
+"quercitin"), respective inhibitor concentration, and initial amplicon copy
+number.
 
-```{r example}
+```{r}
 library(ggplot2)
 library(dplyr, warn.conflicts = FALSE)
 library(sisti)
 
+sisti |>
+  dplyr::distinct(plate, inhibitor, inhibitor_conc, copies, dilution) |>
+  print(n = Inf)
+```
+
+Here is the number of replicates per group:
+
+```{r}
+sisti |>
+  dplyr::distinct(plate, inhibitor, inhibitor_conc, copies, dilution, replicate) |>
+  dplyr::count(plate, inhibitor, inhibitor_conc, copies, dilution) |>
+  print(n = Inf)
+```
+
+
+### Standard dilution series
+
+Most concentrated set of samples in the dilution series have $3.14 × 10^7$
+copies of the NADH dehydrogenase 1 (MT-ND1) amplicon. Following samples in
+the series are ten-fold dilutions.
+
+```{r}
 sisti |>
   dplyr::filter(plate == "calibration") |>
   ggplot(aes(
@@ -68,7 +103,7 @@ sisti |>
   labs(color = "Tannic acid conc (mg/ml)")
 ```
 
-### Inhibition by IgG
+### Inhibition by immunoglobulin G (IgG)
 
 ```{r}
 sisti |>
