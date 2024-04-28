@@ -162,7 +162,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "Tannic acid conc (mg/ml)")
+  labs(color = "Tannic acid conc (mg/mL)")
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
@@ -180,7 +180,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "IgG conc (mg/ml)")
+  labs(color = "IgG conc (mg/mL)")
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
@@ -198,7 +198,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "Quercitin conc (mg/ml)")
+  labs(color = "Quercitin conc (mg/mL)")
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />

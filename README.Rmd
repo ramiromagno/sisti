@@ -100,7 +100,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "Tannic acid conc (mg/ml)")
+  labs(color = "Tannic acid conc (mg/mL)")
 ```
 
 ### Inhibition by immunoglobulin G (IgG)
@@ -116,7 +116,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "IgG conc (mg/ml)")
+  labs(color = "IgG conc (mg/mL)")
 ```
 
 ### Inhibition by quercitin
@@ -132,7 +132,7 @@ sisti |>
   )) +
   geom_line(linewidth = 0.1) +
   geom_point(size = 0.05) +
-  labs(color = "Quercitin conc (mg/ml)")
+  labs(color = "Quercitin conc (mg/mL)")
 ```
 
 ## Code of Conduct
