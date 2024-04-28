@@ -96,3 +96,9 @@ sisti |>
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+## Code of Conduct
+
+Please note that the sisti project is released with a [Contributor Code
+of Conduct](https://rmagno.eu/sisti/CODE_OF_CONDUCT.html). By
+contributing to this project, you agree to abide by its terms.
