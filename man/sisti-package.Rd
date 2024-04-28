@@ -6,7 +6,7 @@
 \alias{sisti-package}
 \title{sisti: Real-Time PCR Data Sets by Sisti et al. (2010)}
 \description{
-What the package does (one paragraph).
+This data package contains four datasets of quantitative PCR (qPCR) amplification curves that were used as supplementary data in the research article by Sisti et al. (2010), \doi{10.1186/1471-2105-11-186}. The primary dataset comprises a ten-fold dilution series spanning copy numbers from 3.14 × 10^7 to 3.14 × 10^2, with twelve replicates per concentration. These samples are based on a pGEM-T Promega plasmid containing a 104 bp fragment of the mitochondrial gene NADH dehydrogenase 1 (MT-ND1), amplified using the ND1/ND2 primer pair. The remaining three datasets contain qPCR results in the presence of specific PCR inhibitors: tannic acid, Immunoglobulin G (IgG), and quercetin, respectively, to assess their effects on the amplification process. These datasets are useful for researchers interested in PCR kinetics. The original raw data file is available as Additional File 1: https://static-content.springer.com/esm/art%3A10.1186%2F1471-2105-11-186/MediaObjects/12859_2009_3643_MOESM1_ESM.XLS.
 }
 \seealso{
 Useful links:
