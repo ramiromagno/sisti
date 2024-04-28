@@ -19,7 +19,7 @@ Description: This data package contains four datasets of quantitative PCR (qPCR)
   on the amplification process. These datasets are useful for researchers 
   interested in PCR kinetics. The original raw data file is available as
   Additional File 1:
-  https://static-content.springer.com/esm/art%3A10.1186%2F1471-2105-11-186/MediaObjects/12859_2009_3643_MOESM1_ESM.XLS.
+  <https://static-content.springer.com/esm/art%3A10.1186%2F1471-2105-11-186/MediaObjects/12859_2009_3643_MOESM1_ESM.XLS>.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
