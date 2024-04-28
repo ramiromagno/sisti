@@ -130,7 +130,7 @@ sisti |>
 ### Standard dilution series
 
 Most concentrated set of samples in the dilution series have
-$3.14 × 10^7$ copies of the NADH dehydrogenase 1 (MT-ND1) amplicon.
+$3.14 \times 10^7$ copies of the NADH dehydrogenase 1 (MT-ND1) amplicon.
 Following samples in the series are ten-fold dilutions.
 
 ``` r
