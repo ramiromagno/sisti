@@ -4,6 +4,9 @@
     <loc>https://rmagno.eu/sisti/404.html</loc>
   </url>
   <url>
+    <loc>https://rmagno.eu/sisti/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
     <loc>https://rmagno.eu/sisti/LICENSE.html</loc>
   </url>
   <url>
@@ -13,9 +16,15 @@
     <loc>https://rmagno.eu/sisti/index.html</loc>
   </url>
   <url>
+    <loc>https://rmagno.eu/sisti/news/index.html</loc>
+  </url>
+  <url>
     <loc>https://rmagno.eu/sisti/reference/index.html</loc>
   </url>
   <url>
     <loc>https://rmagno.eu/sisti/reference/sisti-package.html</loc>
+  </url>
+  <url>
+    <loc>https://rmagno.eu/sisti/reference/sisti.html</loc>
   </url>
 </urlset>
