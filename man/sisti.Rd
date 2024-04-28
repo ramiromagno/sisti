@@ -46,8 +46,8 @@ dehydrogenase 1 (MT-ND1). Please read the Methods section of Sisti et al.
 \subsection{Dilution series}{
 
 A six-point, ten-fold dilution series spanning an amplicon copy number range
-\eqn{3.14 10^7} thru \eqn{3.14 10^2}. Each concentration is replicated twelve
-times. Each reaction has been amplified through 50 cycles.
+\eqn{3.14 \times 10^7} thru \eqn{3.14 \times 10^2}. Each concentration is
+replicated twelve times. Each reaction has been amplified through 50 cycles.
 
 \if{html}{\out{<div class="sourceCode r">}}\preformatted{dplyr::filter(sisti, plate == "calibration")
 #> # A tibble: 3,600 x 13

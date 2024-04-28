@@ -11,8 +11,8 @@
 #' ### Dilution series
 #'
 #' A six-point, ten-fold dilution series spanning an amplicon copy number range
-#' \eqn{3.14 10^7} thru \eqn{3.14 10^2}. Each concentration is replicated twelve
-#' times. Each reaction has been amplified through 50 cycles.
+#' \eqn{3.14 \times 10^7} thru \eqn{3.14 \times 10^2}. Each concentration is
+#' replicated twelve times. Each reaction has been amplified through 50 cycles.
 #'
 #' ```{r}
 #' dplyr::filter(sisti, plate == "calibration")
