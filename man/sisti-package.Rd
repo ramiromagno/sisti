@@ -2,7 +2,6 @@
 % Please edit documentation in R/sisti-package.R
 \docType{package}
 \name{sisti-package}
-\alias{sisti}
 \alias{sisti-package}
 \title{sisti: Real-Time PCR Data Sets by Sisti et al. (2010)}
 \description{
